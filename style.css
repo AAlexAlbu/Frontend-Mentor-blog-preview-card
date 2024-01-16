@@ -1,0 +1,92 @@
+/* css reset */
+html, body, ul, ol, li, form, fieldset, legend { margin: 0; padding: 0; } 
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; } 
+fieldset,img { border: 0; } 
+legend { color: #000; } 
+li { list-style: none; } 
+sup { vertical-align: text-top; } 
+sub { vertical-align: text-bottom; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+caption, th, td { text-align: left; vertical-align: top; font-weight: normal; } 
+input, textarea, select { font-size: 110%; line-height: 1.1; } 
+abbr, acronym { border-bottom: .1em dotted; cursor: help; }
+
+body {
+    background-color: rgb(244, 208, 78);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-card {
+    background-color: white;
+    width: 400px;
+    height: 520px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 2px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 2px -2px rgba(0,0,0);
+    box-shadow: 10px 10px 2px -2px rgba(0,0,0);
+}
+
+.card-content {
+    width: 350px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card-content .title {
+    display: flex;
+}
+
+.card-content h1 {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: hsl(0, 0%, 50%);
+    font-weight: 600;
+}
+
+.card-content  #learning {
+    background-color: rgb(244, 208, 78);
+    margin-top: 20px;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: 800;
+    color: black;
+}
+
+.card-content:nth-child(2) {
+    color: black;   
+}
+
+.attribution {
+    margin-bottom: 5px;
+}
+
+.card-content #uppercased {
+    text-transform: uppercase;
+}
+
+.card-content .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.card-content .avatar img {
+    margin-right: 15px;
+    width: 40px;
+}
+
+.card-content .avatar h3 {
+    margin-top: 20px;
+}
